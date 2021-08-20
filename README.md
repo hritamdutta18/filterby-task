@@ -6,3 +6,17 @@
 - Responsive Structure Implemented
 - No styling framweorks used (like Bootstrap)
 - Bare minimum of animations/transitions used
+
+## Steps to run the site
+
+1. Clone this repository.
+2. Do cd <folder-name>.
+3. Run the script `npm run server`.
+4. Open this site in your computer -> <a href= "https://filterby.herokuapp.com/">Filterby @ PROTAL</a>
+  
+It will look somewhat like this !!
+  
+[![image.png](https://i.postimg.cc/9MhbGTnC/image.png)](https://postimg.cc/Mc91wcwF)
+  
+  
+<b><i>Note: Sorry for the incovenience. There was a problem in deployment @ Heroku & @ Netlify as well.</i></b>
