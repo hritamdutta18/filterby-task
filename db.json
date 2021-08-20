@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Groot",
+      "image":"",
+      "date": "",
+      "location": "Jamshedpur"
+    },
+    {
+      "id": 2,
+      "title": "A Dog",
+      "image": "",
+      "date": "",
+      "location": ""
+    },
+    {
+      "id": 3,
+      "title": "A Dog",
+      "image": "",
+      "date": "",
+      "location": ""
+    },
+    {
+      "id": 4,
+      "title": "A Dog",
+      "image": "",
+      "date": "",
+      "location": ""
+    }
+  ]  
+}
