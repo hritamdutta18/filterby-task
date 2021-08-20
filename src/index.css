@@ -8,6 +8,9 @@ body {
   font-family: sans-serif;
 }
 
+
+/******** Container Styles ********/
+
 .container {
   max-width: 90%;
   margin: 30px auto;
@@ -20,56 +23,12 @@ body {
 
 @media (min-width: 992px){
   .container {
-    max-width: 60%;
+    max-width: 50%;
   }
 }
 
 .header {
   margin-bottom: 30px;
-}
-
-.btn {
-  display: inline-block;
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: inherit;
-}
-
-.btn:focus {
-  outline: none;
-}
-
-.btn:active {
-  transform: scale(0.98);
-}
-
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
-.task {
-  background: #f4f4f4;
-  margin: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.task.reminder {
-  border-left: 5px solid rgb(86, 255, 86);
-}
-
-.task h3 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 footer {
@@ -81,6 +40,8 @@ label{
   font-weight: 700;
 }
 
+
+/******** Toggler Styles ********/
 
 .switch {
   position: relative;
@@ -123,10 +84,6 @@ input:checked + .slider {
   background-color: rgb(85, 243, 85);
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px gold;
-}
-
 input:checked + .slider:before {
   -webkit-transform: translateX(16px);
   -ms-transform: translateX(16px);
@@ -142,6 +99,8 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/******** Toggled Content Styles ********/
+
 .section{
   display: flex;
   justify-content: space-between;
@@ -153,6 +112,35 @@ input:checked + .slider:before {
   justify-content: space-evenly;
 }
 
-.date-content{
-  transition: .5s linear 1s;
+
+/******** Post Styles ********/
+
+.post {
+  background: #f4f4f4;
+  margin: 10px 5px;
+  padding: 10px 20px;
+}
+
+.postdiv{
+  width: 70%;
+  float: right;
+}
+
+.post img{  
+  width: 25%;
+}
+
+@media (max-width: 576px){
+  .postdiv{
+    float: unset;
+  }
+
+  .post{
+    text-align: -webkit-center;
+  }
+
+  .post img{  
+    margin-top: 10px;
+    width: 50%;
+  }
 }

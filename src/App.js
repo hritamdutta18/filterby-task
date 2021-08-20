@@ -12,32 +12,32 @@ function App() {
   const [showDateContent, setShowDateContent] = useState(false);
   const [showLocContent, setShowLocContent] = useState(false);
   
-  // const [posts, setPosts] = useState ([]);
+  const [posts, setPosts] = useState ([]);
 
-  // useEffect (() => {
-  //   const getPosts = async () => {
-  //     const postsFromServer = await fetchPosts();
-  //     setPosts (postsFromServer);
-  //   }
+  useEffect (() => {
+    const getPosts = async () => {
+      const postsFromServer = await fetchPosts();
+      setPosts (postsFromServer);
+    }
 
-  //   getPosts ();
-  // }, [])
+    getPosts ();
+  }, [])
 
-  // // Fetch All Posts
-  // const fetchPosts= async () => {
-  //   const res= await fetch ('http://localhost:5000/posts');
-  //   const data= await res.json();
+  // Fetch All Posts
+  const fetchPosts= async () => {
+    const res= await fetch ('http://localhost:5000/posts');
+    const data= await res.json();
 
-  //   return data;
-  // }
+    return data;
+  }
 
-  // // Fetch a single Post
-  // const fetchPost= async (id) => {
-  //   const res= await fetch (`http://localhost:5000/posts/${id}`);
-  //   const data= await res.json();
+  // Fetch a single Post
+  const fetchPost= async (id) => {
+    const res= await fetch (`http://localhost:5000/posts/${id}`);
+    const data= await res.json();
 
-  //   return data;
-  // }
+    return data;
+  }
 
   return (
     <div className="container">
@@ -50,12 +50,12 @@ function App() {
 
       <LikedPosts />      
 
-      {/* {Posts.length > 0 ? (
+      {posts.length > 0 ? (
         <Posts
           posts= {posts} 
         />) 
       : 
-      ('Nothing to Show !')} */}
+      ('Nothing to Show !')}
         
       <Footer />
     </div>
