@@ -1,11 +1,12 @@
-const Post = ({ post, onDelete, onToggle }) => {
+const Post = ({ post}) => {
     return (
-        <div className= {`post ${post.reminder ? 'reminder' : ''}`}>
-            <h3>
-                {post.text} 
-                
-            </h3>
-            <p>{post.day}</p>    
+        <div className= 'post'>            
+            <div className= "postdiv">
+                <h4>{post.title}</h4><br/>
+                <h6>Date: {post.date}</h6>
+                <h5><i>Location : {post.location}</i></h5> 
+            </div>   
+            <img src= {post.image}/>           
         </div>
     )
 }
