@@ -25,7 +25,7 @@ function App() {
 
   // Fetch All Posts
   const fetchPosts= async () => {
-    const res= await fetch ('http://localhost:5000/posts');
+    const res= await fetch ('https://my-json-server.typicode.com/hritamdutta18/fake_api_task/db');
     const data= await res.json();
 
     return data;
